@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(6, 4, 26, 0.863);
+    color: #fff;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HOME PAGE */
+.note-grid_container{
+    margin: 50px auto ;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-note{
+    flex: 0 0 45%;
+    background-color: rgba(21, 17, 65, 0.863);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+.single-note:hover{
+    box-shadow: 2px 2px 10px #0002;
+}
+.single-note_content{
+    display: flex;
+    flex-direction: column;
+}
+.single-note_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#go > img{
+    width: 50px;
+}
+#delete > img{
+    width: 30px;
+}
+#delete{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* END OF HOME PAGE */
+
+
+#note{
+    padding: 8px 5px;
+}
+h2{
+    font-weight: 400;
+    color: rgba(129, 125, 173, 0.863);
+}
+h4{
+    font-weight: 200;
+    color: rgba(236, 236, 236, 0.863);
+}
+nav{
+    display: flex;
+    background-color: rgba(13, 12, 27, 0.863);
+    padding: 5px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 15px auto;
+    justify-content: space-evenly;
+    height: 50px;
+}
+nav > a > img{
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+form > input, form > textarea{
+    background-color: rgba(0, 0, 0, 0.219);
+    border: none;
+    width: 300px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+form > textarea{
+    width: 90% !important;
+    height: 300px;
+}
+form > button{
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
+form > input:focus, form > textarea:focus{
+    outline: none;
+}
+#delete-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+
+.single-note_display{
+    width: 90%;
+    margin: 20px auto;
+}
+.single-note_display > div{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width:768px) {
+    .note-grid_container{
+        flex-direction: row;
+    }
+    .single-note{
+        flex: 0 0 100%;
+        background-color: rgba(21, 17, 65, 0.863);
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+    nav{
+        width: 90%;
+    }
+    #go > img{
+        width: 40px;
+        height: 40px;
+    }
+    #delete > img{
+        width: 20px;
+    }
+    #delete{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .single-note_button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
