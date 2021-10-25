@@ -24,4 +24,4 @@ mongoose.connect(process.env.MONGO_URI).then(() => {
 }).catch(err => console.log(err))
 
 
-app.listen(3000,()=> console.log("✅ SERVER STARTED") ) 
+app.listen(process.env.PORT ,()=> console.log("✅ SERVER STARTED") ) 
